@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/total.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@400;500;700&family=Montserrat:wght@700&display=swap');
+    </style>
+    <title>Первая страница</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="dashboard-desktop">
+            <div class="background">
+                <img class="fire_bgd-icon" alt="" src="./img/fire_bgr.png">
+            </div>
+            <div class="sidebar"></div>
+            <div class="copyright">©2023 ERIK GT.</div>
+            <div class="thumbs">
+              <img class="moon-icon" alt="" src="./img/moon.png">
+              <img class="sunset-icon" alt="" src="./img/sunset.png">
+              <img class="crank-icon" alt="" src="./img/crank.png">
+              <img class="murderer-icon" alt="" src="./img/murderer.png">
+            </div>
+            <div class="menu">
+                <div class="home1 active-menu">ДОМОЙ</div>
+                <div><a href="./page1.html" class="item-1">ПУНКТ 1</a></div>
+                <div class="item-2">ПУНКТ 2</div>
+                <div class="item-3">ПУНКТ 3</div>
+                <div class="item-4">ПУНКТ 4</div>
+                <div class="item-5">ПУНКТ 5</div>
+                <div class="contact">КОНТАКТЫ</div>
+                <div class="support">ПОДДЕРЖКА</div>
+                <img class="marker-icon-home1" alt="" src="./img/marker.svg">
+            </div>
+            <div class="NewsBox">
+                <b class="news">ФАКТ</b>
+                <div class="downward-triangle-icon"></div>
+            </div>
+            <div class="button">
+                <div class="button-outline"></div>
+                <b class="learn-more">УЗНАТЬ БОЛЬШЕ</b>
+            </div>
+            <div class="lorem-ipsum-dolor-container">
+                Портфолио постоянно увеличивается, так как опыт работы в верстке и программировании совершенствуется постоянно. Знания и навыки, полученные на курсе умножаются и представлены фактами.
+            </div>
+            <div class="simple-starter-template-container">
+                <p class="simple-starter">
+                    <span>Алексей Жданов</span>
+                </p>
+                <P class="template">
+                    <span>VEB-разработчик</span>
+                </P>
+            </div>
+            <div class="a-clean-simple">
+                Специалист по верстке сайтов HTML5&CSS3 и программированию на языке JavaScript знает много решений для того чтобы ваш бизнес работал эффективней благодаря оптимальному сайту Компании.
+            </div>
+        </div>
+        <div class="social-box">
+            <img class="twitter-icon" alt="" src="./img/tvitter.svg">
+            <img class="facebook-icon" alt="" src="./img/facebook.svg">
+        </div>
+        <script>
+            fetch('menu.htmi')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementByld('social-box').innerHTML = data;
+            })
+            .catch(error => console.log(error));
+        </script>
+
+        <div class="yourlogo">
+            <span class="your">ALEX</span>
+            <b class="logo">GLOBAL EVENTS</b>
+        </div>
+    </div> 
+</body>
+
+</html>
